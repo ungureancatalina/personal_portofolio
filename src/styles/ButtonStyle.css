@@ -8,7 +8,7 @@
     left: 50%;
     width: 12px;
     height: 12px;
-    background: oklch(38.6% 0.063 188.416);
+    background: #330808;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%) translate(0, 0);

@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import "../styles/ButtonStyle.css";
+
 
 interface ButtonProps {
     children: React.ReactNode;
@@ -40,18 +42,18 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, active }) => {
         <button
             ref={buttonRef}
             onClick={handleClick}
-            className={`relative overflow-visible rounded-full px-20 py-12 min-w-[320px] text-4xl font-bold text-white transition-transform duration-300
-            ${
+            className={`relative overflow-visible rounded-full px-20 py-12 min-w-[320px] text-4xl font-bold text-[#d6cac9] transition-transform duration-300
+        ${
                 active
-                    ? "bg-gradient-to-r from-teal-500 via-teal-700 to-teal-900 shadow-lg shadow-teal-400/60 scale-105"
-                    : "bg-gradient-to-r from-slate-400 via-slate-500 to-slate-600 shadow-md hover:shadow-slate-400/40 hover:scale-105"
+                    ? "bg-gradient-to-r from-[#851515] to-[#330808] shadow-lg shadow-[#851515]/60 scale-105"
+                    : "bg-gradient-to-r from-[#595c5b] to-[#49524f] shadow-md hover:shadow-[#77a18c]/40 hover:scale-105"
             }
-            focus:outline-none`}>
-
-
-        {children}
+        focus:outline-none`}
+        >
+            {children}
         </button>
     );
+
 };
 
 export default Button;

@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
             }}>
             <main className="mt-20 mb-20 w-full flex justify-start px-40">
                 <ProfileCard
-                    name="Ungurean Catalina"
+                    name="Ungurean Cătălina"
                     title=""
                     handle="ungureancatalina"
                     contactText="Contact Me"
