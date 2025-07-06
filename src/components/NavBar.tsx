@@ -32,9 +32,11 @@ const Navbar: React.FC<NavbarProps> = ({ activeIndex, setActiveIndex }) => {
 
     return (
         <header
-            className="sticky top-0 z-20 w-full flex justify-center items-center gap-24 py-10
-                             bg-[#851515]/20 backdrop-blur-md shadow-md"
+            className="sticky top-0 z-20 w-full flex flex-wrap justify-center items-center
+             gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-36 py-4 sm:py-6 md:py-10
+             bg-[#851515]/20 backdrop-blur-md shadow-md px-4"
         >
+
         <Button active={activeIndex === 0} onClick={() => handleClick(0, "/projects")}>
                 Projects
             </Button>

@@ -42,7 +42,13 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, active }) => {
         <button
             ref={buttonRef}
             onClick={handleClick}
-            className={`relative overflow-visible rounded-full px-20 py-12 min-w-[320px] text-4xl font-bold text-[#d6cac9] transition-transform duration-300
+            className={`relative overflow-visible rounded-full
+        px-4 py-2 text-sm min-w-[140px]
+        sm:px-6 sm:py-3 sm:text-base sm:min-w-[180px]
+        md:px-10 md:py-5 md:text-xl md:min-w-[220px]
+        lg:px-14 lg:py-7 lg:text-2xl lg:min-w-[260px]
+        xl:px-20 xl:py-10 xl:text-3xl xl:min-w-[300px]
+        font-bold text-[#d6cac9] transition-transform duration-300
         ${
                 active
                     ? "bg-gradient-to-r from-[#851515] to-[#330808] shadow-lg shadow-[#851515]/60 scale-105"

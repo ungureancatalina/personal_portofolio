@@ -16,8 +16,8 @@
     --sunpillar-1: hsl(2, 100%, 73%);
     --sunpillar-2: hsl(53, 100%, 69%);
     --sunpillar-3: hsl(93, 100%, 69%);
-    --sunpillar-4: hsl(219, 49%, 72%);
-    --sunpillar-5: hsl(336, 49%, 72%);
+    --sunpillar-4: hsl(160, 2%, 35%);
+    --sunpillar-5: hsl(179, 25%, 59%);
     --sunpillar-6: hsl(283, 100%, 73%);
     --sunpillar-clr-1: var(--sunpillar-1);
     --sunpillar-clr-2: var(--sunpillar-2);
@@ -40,7 +40,6 @@
     position: absolute;
     inset: -10px;
     background: inherit;
-    background-position: inherit;
     border-radius: inherit;
     transition: all 0.5s ease;
     filter: contrast(2) saturate(2) blur(36px);
@@ -61,8 +60,8 @@
 }
 
 .pc-card {
-    height: 80svh;
-    max-height: 540px;
+    height: 90svh;
+    max-height: 650px;
     display: grid;
     aspect-ratio: 0.718;
     border-radius: var(--card-radius);
@@ -74,7 +73,7 @@
     transform: translate3d(0, 0, 0.1px) rotateX(0deg) rotateY(0deg);
     background-size: 100% 100%;
     background-position: 0 0, 0 0, 50% 50%, 0 0;
-    background-image: radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y), hsla(266, 100%, 90%, var(--card-opacity)) 4%, hsla(266, 50%, 80%, calc(var(--card-opacity) * 0.75)) 10%, hsla(266, 25%, 70%, calc(var(--card-opacity) * 0.5)) 50%, hsla(266, 0%, 60%, 0) 100%), radial-gradient(35% 52% at 55% 20%, rgba(241, 153, 174, 0.77) 0%, #073aff00 100%), radial-gradient(100% 100% at 50% 50%, #9abdb3 1%, #073aff00 76%), conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%);
+    background-image: radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y), hsla(266, 100%, 90%, var(--card-opacity)) 4%, hsla(266, 50%, 80%, calc(var(--card-opacity) * 0.75)) 10%, hsla(266, 25%, 70%, calc(var(--card-opacity) * 0.5)) 50%, hsla(266, 0%, 60%, 0) 100%), radial-gradient(35% 52% at 55% 20%, rgba(241, 153, 174, 0.77) 0%, #073aff00 100%), radial-gradient(100% 100% at 50% 50%, #6b2f2f 1%, #073aff00 76%), conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%);
     overflow: hidden;
 }
 
@@ -122,7 +121,7 @@
     background: transparent;
     background-size: cover;
     background-position: center;
-    background-image: repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space) * 1), var(--sunpillar-clr-2) calc(var(--space) * 2), var(--sunpillar-clr-3) calc(var(--space) * 3), var(--sunpillar-clr-4) calc(var(--space) * 4), var(--sunpillar-clr-5) calc(var(--space) * 5), var(--sunpillar-clr-6) calc(var(--space) * 6), var(--sunpillar-clr-1) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(292, 64%, 74%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
+    background-image: repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space) * 1), var(--sunpillar-clr-2) calc(var(--space) * 2), var(--sunpillar-clr-3) calc(var(--space) * 3), var(--sunpillar-clr-4) calc(var(--space) * 4), var(--sunpillar-clr-5) calc(var(--space) * 5), var(--sunpillar-clr-6) calc(var(--space) * 6), var(--sunpillar-clr-1) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(212, 54%, 80%) 3.8%, hsl(0, 39%, 30%) 4.5%, hsl(0, 46%, 73%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
     background-position: 0 var(--background-y), var(--background-x) var(--background-y), center;
     background-blend-mode: color, hard-light;
     background-size: 500% 500%, 300% 300%, 200% 200%;
@@ -170,7 +169,7 @@
 .pc-glare {
     transform: translate3d(0, 0, 1.1px);
     overflow: hidden;
-    background-image: radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsl(219, 49%, 72%) 12%, hsl(336, 49%, 72%) 90%);
+    background-image: radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsl(36, 35%, 75%) 12%, hsl(160, 2%, 35%) 90%);
     mix-blend-mode: overlay;
     filter: brightness(0.8) contrast(1.2);
     z-index: 4;
@@ -182,7 +181,7 @@
 }
 
 .pc-avatar-content .avatar {
-    width: 100%;
+    width: 90%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(1);
@@ -264,25 +263,6 @@
     line-height: 1;
 }
 
-
-.pc-contact-btn {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    backdrop-filter: blur(10px);
-}
-
-.pc-contact-btn:hover {
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: translateY(-1px);
-    transition: all 0.2s ease;
-}
-
 .pc-content {
     max-height: 100%;
     overflow: hidden;
@@ -296,12 +276,11 @@
 .pc-details {
     width: 100%;
     position: absolute;
-    top: 3em;
+    top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    top: 5%;
     left:50%;
     transform: translate(-50%, -50%);
 }
@@ -310,7 +289,6 @@
     font-weight: 600;
     margin: 0;
     font-size: 35px;
-    margin: 0;
     display: inline-block;
     background-image: linear-gradient(to bottom, #fff, #db95b1);
     background-size: 1em 1.5em;
@@ -322,7 +300,7 @@
 .pc-details p {
     font-weight: 600;
     position: relative;
-    top: -12px;
+    top: 5px;
     white-space: nowrap;
     font-size: 16px;
     margin: 0 auto;

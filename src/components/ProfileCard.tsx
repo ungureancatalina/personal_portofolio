@@ -5,22 +5,18 @@ interface ProfileCardProps {
     name: string;
     title: string;
     handle: string;
-    contactText: string;
     avatarUrl: string;
     showUserInfo?: boolean;
     enableTilt?: boolean;
-    onContactClick?: () => void;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
                                                      name,
                                                      title,
                                                      handle,
-                                                     contactText,
                                                      avatarUrl,
                                                      showUserInfo = true,
                                                      enableTilt = true,
-                                                     onContactClick,
                                                  }) => {
     const cardRef = useRef<HTMLDivElement>(null);
 
@@ -82,9 +78,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
                                 <div className="pc-handle">@{handle}</div>
                             </div>
                         </div>
-                        <button className="pc-contact-btn" onClick={onContactClick}>
-                            {contactText}
-                        </button>
                     </div>
                 )}
                 <div className="pc-content">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/AboutStyle.css";
+import "../styles/PagesStyle.css";
 import ScrollFloat from "../components/ScrollFloat";
 
 const About: React.FC = () => {
@@ -72,25 +73,6 @@ const About: React.FC = () => {
                 </p>
             ),
         },
-        {
-            title: "Education & Certifications",
-            content: (
-                <ul className="list-disc pl-6 space-y-2">
-                    <li>2023 to Present: Bachelor’s degree in Computer Science at Babeș-Bolyai University</li>
-                    <li>2023: Baccalaureate diploma in Mathematics-Computer Science</li>
-                    <li>2023: ECDL Certificate: 7 standard modules and GIMP image editing</li>
-                </ul>
-            ),
-        },
-        {
-            title: "Languages I Speak",
-            content: (
-                <ul className="list-disc pl-6 space-y-2">
-                    <li>English: Fluent (C1), certified by Cambridge</li>
-                    <li>German:  Fluent (C1), certified by DSD II</li>
-                </ul>
-            ),
-        },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -122,15 +104,19 @@ const About: React.FC = () => {
     }, [sections.length]);
 
     return (
-        <div className="about-container">
-            <h1 className="about-title">Ungurean Cătălina-Iuliana</h1>
-            <p className="scroll-hint">Scroll to find more</p>
+        <div className="relative h-[70vh] pt-8 text-center max-w-[1500px] mx-auto">
+            <h1 className="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] font-black mb-10 text-[#6b2f2f] select-none max-w-full break-words text-center px-4">
+                Ungurean Cătălina-Iuliana
+            </h1>
+            <p className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-medium text-[#6b2f2f] mt-[-1.5rem] md:mt-[-2rem] lg:mt-[-2.5rem] mb-10 select-none italic text-center px-4">
+                Scroll to find more
+            </p>
 
-            <div className="sections-container">
+            <div className="relative mt-20 w-full h-[70vh] flex justify-center items-center">
                 {sections.map((section, i) => (
                     <ScrollFloat key={i} index={i} currentIndex={currentIndex}>
                         <section>
-                            <h2 className="section-heading">{section.title}</h2>
+                            <h2 className="text-[3.5rem] font-bold mb-10 text-[#851515]">{section.title}</h2>
                             {section.content}
                         </section>
                     </ScrollFloat>
