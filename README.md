@@ -61,11 +61,10 @@ cd personal_portofolio
 3. Open your browser and navigate to http://localhost:3000 to see the portfolio
   
 4. This is how the app looks like:
-5. 
+
 <img width="1906" height="1017" alt="Screenshot 2025-07-19 150024" src="https://github.com/user-attachments/assets/67db0063-1e1c-476c-96e8-d8e0995ae1d0" />
 
 <img width="1906" height="1016" alt="Screenshot 2025-07-19 145935" src="https://github.com/user-attachments/assets/72656d24-eae1-45e9-9ac8-8a58d24a714f" />
 
-<img width="1905" height="1016" alt="image" src="https://github.com/user-attachments/assets/f0d2b9bd-de70-4fb4-9065-c5c50536770e" />
-
+<img width="1905" height="1016" alt="Screenshot 2025-07-19 150048" src="https://github.com/user-attachments/assets/33f0011e-0ffe-4499-810c-3478d8968c16" />
 
