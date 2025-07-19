@@ -8,9 +8,14 @@ const About: React.FC = () => {
         {
             title: "My Academic Journey",
             content: (
-                <p>
-                    I’m currently in my third year studying Computer Science at Babeș-Bolyai University in Cluj-Napoca. Ever since I started programming, I’ve been fascinated by how technology can be a bridge between ideas and real solutions. I love diving deep into both the logic behind systems and the creative side of designing user-friendly applications that truly make a difference. For me, great software isn’t just about making things work, it’s about crafting clean, maintainable and thoughtful solutions that people enjoy using.
-                </p>
+                <>
+                    <p>
+                        I’m currently in my third year studying Computer Science at Babeș-Bolyai University in Cluj-Napoca. Ever since I started programming, I’ve been fascinated by how technology can be a bridge between ideas and real solutions. I love diving deep into both the logic behind systems and the creative side of designing user-friendly applications that truly make a difference. For me, great software isn’t just about making things work, it’s about crafting clean, maintainable and thoughtful solutions that people enjoy using.
+                    </p>
+                    <p>
+                        Outside of coursework, I actively engage in IT community workshops focused on public speaking, innovation, and staying up to date with current technologies. I also attend company visits and training sessions on topics like writing effective CVs, analytical thinking, communication skills and experiences that support both my professional growth and personal development.
+                    </p>
+                </>
             ),
         },
         {
@@ -34,7 +39,7 @@ const About: React.FC = () => {
                         Currently, I am participating in the Community Roots summer school, where I am gaining valuable hands-on experience through specialized trainings and active networking with professionals in the tech community. This program is helping me develop my communication skills, teamwork abilities and networking strategies essential for the tech industry.
                     </p>
                     <p>
-                        Upon completing the summer school, I will begin working on a mobile app project in collaboration with @. This opportunity will allow me to apply the skills I've acquired and further enhance my practical knowledge through real-world project development.
+                        Upon completing the summer school, I will begin working on a mobile app project in collaboration with Arobs. This opportunity will allow me to apply the skills I've acquired and further enhance my practical knowledge through real-world project development.
                     </p>
                 </>
             ),
@@ -73,6 +78,16 @@ const About: React.FC = () => {
                 </p>
             ),
         },
+        {
+            title: "Contact Information",
+            content: (
+                <p>
+                    You can connect with me on <b><a href="https://github.com/ungureancatalina" target="_blank" rel="noopener noreferrer">GitHub</a></b> and <b><a href="https://www.linkedin.com/in/catalina-ungurean-22b16a280/" target="_blank" rel="noopener noreferrer">LinkedIn</a></b>. For direct inquiries, please feel free to email me at <b><a href="mailto:ungurean.catalina.iuliana@gmail.com">ungurean.catalina.iuliana@gmail.com</a></b>.
+                    <br />
+                    (Clicking the bolded links will redirect you to my respective pages.)
+                </p>
+            ),
+        }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

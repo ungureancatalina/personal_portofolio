@@ -43,9 +43,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeIndex, setActiveIndex }) => {
             <Button active={activeIndex === 1} onClick={() => handleClick(1, "/")}>
                 About
             </Button>
-            <Button active={activeIndex === 2} onClick={() => handleClick(2, "/contact")}>
-                Contact
-            </Button>
+            {/*<Button active={activeIndex === 2} onClick={() => handleClick(2, "/contact")}>*/}
+            {/*    Contact*/}
+            {/*</Button>*/}
         </header>
     );
 };

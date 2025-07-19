@@ -2,6 +2,7 @@ import React from "react";
 import ProfileCard from "../components/ProfileCard";
 import FlipCard from "../components/FlipCard";
 import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import "../styles/PagesStyle.css";
 
 const Contact: React.FC = () => {
     return (

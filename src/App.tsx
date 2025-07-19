@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { useState } from "react";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Navbar from "./components/NavBar";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
                     <Routes>
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
+                        {/*<Route path="/contact" element={<Contact />} />*/}
                     </Routes>
                 </main>
             </div>
