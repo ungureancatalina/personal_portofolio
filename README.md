@@ -31,9 +31,10 @@ The portfolio features an interactive and visually engaging layout where project
 ## Project Structure
 
 personal_portfolio/
-├── components/           # Reusable React components (e.g., ScrollFloatCircular)
-├── pages/                # React pages (e.g., Projects page)
-├── styles/               # Tailwind CSS and custom styles
+├── src/
+│  ├── components/           # Reusable React components (e.g., ScrollFloatCircular)
+│  ├── pages/                # React pages (e.g., Projects page)
+│  ├── styles/               # Tailwind CSS and custom styles
 ├── public/               # Images used in the portfolio
 ├── App.tsx               # Main app component
 └── main.tsx             # Entry point
