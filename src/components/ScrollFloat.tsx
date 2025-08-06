@@ -19,12 +19,12 @@ const ScrollFloat: React.FC<ScrollFloatProps> = ({ children, index, currentIndex
             ref.current.style.zIndex = "5";
         } else if (currentIndex < index) {
             ref.current.style.opacity = "0";
-            ref.current.style.transform = "translateY(50px)";
+            ref.current.style.transform = "translateY(25px)";
             ref.current.style.pointerEvents = "none";
             ref.current.style.zIndex = "1";
         } else {
             ref.current.style.opacity = "0";
-            ref.current.style.transform = "translateY(-50px)";
+            ref.current.style.transform = "translateY(-25px)";
             ref.current.style.pointerEvents = "none";
             ref.current.style.zIndex = "1";
         }
@@ -33,7 +33,7 @@ const ScrollFloat: React.FC<ScrollFloatProps> = ({ children, index, currentIndex
     return (
         <div
             ref={ref}
-            className="scroll-float-section"
+            className="scroll-float-section transition-all duration-500 ease-in-out"
         >
             {children}
         </div>

@@ -6,6 +6,13 @@ The portfolio features an interactive and visually engaging layout where project
 
 ---
 
+## 🌐 Live Demo
+
+ **View it here:**  
+ [Personal Portofolio](https://ungureancatalina.github.io/personal_portofolio)
+
+---
+
 ## Technologies Used
 
 | Tool                       | Purpose                                |
@@ -25,7 +32,7 @@ The portfolio features an interactive and visually engaging layout where project
 - Each project links directly to its GitHub repository
 - Smooth hover effects and animations for enhanced UX
 - Clear and concise description of personal and academic projects
-  
+
 ---
 
 ## Project Structure
@@ -42,12 +49,6 @@ personal_portfolio/
 
 ---
 
-## The Link
-
-https://ungureancatalina.github.io/personal_portofolio/
-
----
-
 ## How to Run
 
 ### Requirements
@@ -58,16 +59,16 @@ https://ungureancatalina.github.io/personal_portofolio/
 ### Steps
 
 1. Clone the repository:
-bash
-git clone https://github.com/ungureancatalina/personal_portofolio.git
-cd personal_portofolio
+   bash
+   git clone https://github.com/ungureancatalina/personal_portofolio.git
+   cd personal_portofolio
 
 2. Install dependencies and start the development server:
-   - npm install
-   - npm run dev
+    - npm install
+    - npm run dev
 
 3. Open your browser and navigate to http://localhost:3000 to see the portfolio
-  
+
 4. This is how the app looks like:
 
 <img width="1906" height="1017" alt="Screenshot 2025-07-19 150024" src="https://github.com/user-attachments/assets/67db0063-1e1c-476c-96e8-d8e0995ae1d0" />

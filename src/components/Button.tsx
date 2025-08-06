@@ -43,18 +43,18 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, active }) => {
             ref={buttonRef}
             onClick={handleClick}
             className={`relative overflow-visible rounded-full
-        px-4 py-2 text-sm min-w-[140px]
-        sm:px-6 sm:py-3 sm:text-base sm:min-w-[180px]
-        md:px-10 md:py-5 md:text-xl md:min-w-[220px]
-        lg:px-14 lg:py-7 lg:text-2xl lg:min-w-[260px]
-        xl:px-20 xl:py-10 xl:text-3xl xl:min-w-[300px]
-        font-bold text-[#d6cac9] transition-transform duration-300
-        ${
+                px-2 py-1 text-xs min-w-[120px]
+                sm:px-4 sm:py-2 sm:text-sm sm:min-w-[140px]
+                md:px-5 md:py-3 md:text-base md:min-w-[160px]
+                lg:px-6 lg:py-4 lg:text-lg lg:min-w-[180px]
+                xl:px-8 xl:py-5 xl:text-xl xl:min-w-[200px]
+                font-bold text-[#d6cac9] transition-transform duration-300
+                ${
                 active
                     ? "bg-gradient-to-r from-[#851515] to-[#330808] shadow-lg shadow-[#851515]/60 scale-105"
                     : "bg-gradient-to-r from-[#595c5b] to-[#49524f] shadow-md hover:shadow-[#77a18c]/40 hover:scale-105"
-            }
-        focus:outline-none`}
+                }
+                focus:outline-none`}
         >
             {children}
         </button>

@@ -19,8 +19,8 @@ const ScrollFloatCircular: React.FC<ScrollFloatCircularProps> = ({ children, ind
             const w = window.innerWidth;
             const h = window.innerHeight;
             setRadius({
-                radiusX: w * 0.35,
-                radiusY: h * 0.3,
+                radiusX: Math.min(w * 0.35, 350),
+                radiusY: Math.min(h * 0.3, 250),
             });
         };
 
@@ -43,9 +43,9 @@ const ScrollFloatCircular: React.FC<ScrollFloatCircularProps> = ({ children, ind
 
             if (ref.current) {
                 ref.current.style.position = "absolute";
-                ref.current.style.top = "80%";
+                ref.current.style.top = "60%";
                 ref.current.style.left = "50%";
-                ref.current.style.transform = `translate(${x}px, ${y}px) scale(1.2) translate(-50%, -50%)`;
+                ref.current.style.transform = `translate(${x}px, ${y}px) scale(0.9) translate(-50%, -50%)`;
                 ref.current.style.opacity = "1";
                 ref.current.style.zIndex = "5";
                 ref.current.style.pointerEvents = "auto";

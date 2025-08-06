@@ -36,10 +36,10 @@ const About: React.FC = () => {
             content: (
                 <>
                     <p>
-                        Currently, I am participating in the Community Roots summer school, where I am gaining valuable hands-on experience through specialized trainings and active networking with professionals in the tech community. This program is helping me develop my communication skills, teamwork abilities and networking strategies essential for the tech industry.
-                    </p>
+                        In the summer of 2025, I completed the <b>Community Roots</b> summer school, where I co-developed <b>CASualBot</b>, an AI chatbot that helps Romanian clinics simplify <b>CAS insurance</b> processes.
+                        I worked in a collaborative team, guided by <b>international mentors</b>, and attended workshops on <b>entrepreneurship, innovation</b>, <b>public speaking</b>, and startup pitching. We delivered a working prototype, a full <b>investor pitch deck</b>, and a go-to-market strategy.                    </p>
                     <p>
-                        Upon completing the summer school, I will begin working on a mobile app project in collaboration with Arobs. This opportunity will allow me to apply the skills I've acquired and further enhance my practical knowledge through real-world project development.
+                        Currently, I’m also part of a summer internship with <b>AROBS</b>, where I’m building a mobile app using <b>Android Studio and Kotlin</b>. The project is helping me strengthen my <b>technical consistency</b>, learn best practices in UI/UX design, and improve <b>collaboration and communication</b> through teamwork and mentorship sessions.
                     </p>
                 </>
             ),
@@ -83,7 +83,8 @@ const About: React.FC = () => {
             content: (
                 <p>
                     You can connect with me on <b><a href="https://github.com/ungureancatalina" target="_blank" rel="noopener noreferrer">GitHub</a></b> and <b><a href="https://www.linkedin.com/in/catalina-ungurean-22b16a280/" target="_blank" rel="noopener noreferrer">LinkedIn</a></b>. For direct inquiries, please feel free to email me at <b><a href="mailto:ungurean.catalina.iuliana@gmail.com">ungurean.catalina.iuliana@gmail.com</a></b>.
-                    <br />
+                    <br />npm install --save-dev gh-pages
+
                     (Clicking the bolded links will redirect you to my respective pages.)
                 </p>
             ),
@@ -119,26 +120,31 @@ const About: React.FC = () => {
     }, [sections.length]);
 
     return (
-        <div className="relative h-[70vh] pt-8 text-center max-w-[1500px] mx-auto">
-            <h1 className="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] font-black mb-10 text-[#6b2f2f] select-none max-w-full break-words text-center px-4">
+        <div className="relative h-[80vh] pt-4 text-center max-w-[800px] mx-auto">
+            <h1 className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-black mb-6 text-[#6b2f2f] select-none break-words px-2">
                 Ungurean Cătălina-Iuliana
             </h1>
-            <p className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] font-medium text-[#6b2f2f] mt-[-1.5rem] md:mt-[-2rem] lg:mt-[-2.5rem] mb-10 select-none italic text-center px-4">
+            <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-medium text-[#6b2f2f] mt-[-0.8rem] mb-6 select-none italic px-2">
                 Scroll to find more
             </p>
 
-            <div className="relative mt-20 w-full h-[70vh] flex justify-center items-center">
+            <div className="relative mt-10 w-full h-[60vh] flex justify-center items-center">
                 {sections.map((section, i) => (
                     <ScrollFloat key={i} index={i} currentIndex={currentIndex}>
                         <section>
-                            <h2 className="text-[3.5rem] font-bold mb-10 text-[#851515]">{section.title}</h2>
-                            {section.content}
+                            <h2 className="text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] font-bold mb-6 text-[#851515]">
+                                {section.title}
+                            </h2>
+                            <div className="text-left text-[0.875rem] sm:text-[1rem] leading-relaxed">
+                                {section.content}
+                            </div>
                         </section>
                     </ScrollFloat>
                 ))}
             </div>
         </div>
     );
+
 };
 
 export default About;
