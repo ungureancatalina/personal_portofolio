@@ -15,6 +15,8 @@ const defaultItems = [
     { url: `https://github.com/ungureancatalina/UBB--FMI`, text: "University Projects", image: "img10.jpg" },
     { url: `https://github.com/ungureancatalina/personal_portofolio`, text: "Personal Portofolio", image: "img11.jpg" },
     { url: `https://github.com/ungureancatalina/UBB--FMI/tree/main/AN_2/SEM_2/AI/proiect`, text: "Peri-implantitis Diagnosis", image: "img12.jpg" },
+    { url: `https://github.com/ungureancatalina/CASualBot`, text: "CASualBot", image: "img13.jpg" },
+    { url: `https://github.com/ungureancatalina/android-practica`, text: "Android Apps", image: "img14.jpg" },
 ];
 
 const Projects: React.FC = () => {

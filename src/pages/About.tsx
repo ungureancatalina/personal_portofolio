@@ -9,11 +9,11 @@ const About: React.FC = () => {
             title: "My Academic Journey",
             content: (
                 <>
-                    <p>
-                        I’m currently in my third year studying Computer Science at Babeș-Bolyai University in Cluj-Napoca. Ever since I started programming, I’ve been fascinated by how technology can be a bridge between ideas and real solutions. I love diving deep into both the logic behind systems and the creative side of designing user-friendly applications that truly make a difference. For me, great software isn’t just about making things work, it’s about crafting clean, maintainable and thoughtful solutions that people enjoy using.
+                    <p className="mb-4">
+                        I’m currently in my third year studying <b>Computer Science</b> at <b>Babeș-Bolyai University</b> in <b>Cluj-Napoca</b>. Ever since I started programming, I’ve been fascinated by how <b>technology</b> can be a bridge between <b>ideas</b> and <b>real solutions</b>. I love diving deep into both the <b>logic</b> behind systems and the <b>creative side</b> of designing <b>user-friendly applications</b> that truly make a difference. For me, great software isn’t just about making things work, it’s about crafting <b>clean, maintainable</b> and <b>thoughtful solutions</b> that people enjoy using.
                     </p>
-                    <p>
-                        Outside of coursework, I actively engage in IT community workshops focused on public speaking, innovation, and staying up to date with current technologies. I also attend company visits and training sessions on topics like writing effective CVs, analytical thinking, communication skills and experiences that support both my professional growth and personal development.
+                    <p className="mb-4">
+                        Outside of coursework, I actively engage in <b>IT community workshops</b> focused on <b>public speaking</b>, <b>innovation</b> and staying up to date with <b>current technologies</b>. I also attend <b>company visits</b> and training sessions on topics like <b>writing effective CVs</b>, <b>analytical thinking</b>, <b>communication skills</b> as well as workshops on <b>recruitment strategies</b>, <b>motivating volunteers</b> and <b>engaging people in meaningful work</b>. These experiences support both my <b>professional growth</b> and <b>personal development</b>.
                     </p>
                 </>
             ),
@@ -22,11 +22,11 @@ const About: React.FC = () => {
             title: "Passions Beyond Coding",
             content: (
                 <>
-                    <p>
-                        When I’m not focused on coding or tech projects, I enjoy nurturing my creativity and appreciating the simple things in life. My passion for arts and aesthetics, especially drawing and designing, allows me to express ideas and feelings beyond words. This creative outlet is often inspired by the books I read, which fuel my imagination and open new perspectives. To keep my mind sharp and energized, I challenge myself with brain teasers and word puzzles that add a playful break to my routine.
+                    <p className="mb-4">
+                        When I’m not focused on <b>coding</b> or <b>tech projects</b>, I enjoy nurturing my <b>creativity</b> and appreciating the simple things in life. My passion for <b>arts</b> and <b>aesthetics</b>, especially <b>drawing</b> and <b>designing</b>, allows me to express ideas and feelings beyond words. This <b>creative outlet</b> is often inspired by the <b>books</b> I read, which fuel my imagination and open new perspectives. To keep my mind sharp and energized, I challenge myself with <b>brain teasers</b> and <b>word puzzles</b> that add a playful break to my routine.
                     </p>
-                    <p>
-                        I find balance and calm in nature, where exploring new places lets me soak in quiet beauty and recharge. Traveling further feeds my curiosity and sense of adventure by exposing me to new cultures and enriching experiences. All these passions truly define who I am. I’m proud of the person I am and I’m excited to keep growing by working on things that truly matter.
+                    <p className="mb-4">
+                        I find <b>balance</b> and <b>calm</b> in <b>nature</b>, where exploring new places lets me soak in <b>quiet beauty</b> and recharge. <b>Traveling</b> feeds my <b>curiosity</b> and <b>sense of adventure</b> by exposing me to new <b>cultures</b> and enriching experiences. All these passions truly define who I am. I’m proud of the person I am and I’m excited to keep growing by working on things that truly matter.
                     </p>
                 </>
             ),
@@ -35,11 +35,12 @@ const About: React.FC = () => {
             title: "Practical Experience",
             content: (
                 <>
-                    <p>
-                        In the summer of 2025, I completed the <b>Community Roots</b> summer school, where I co-developed <b>CASualBot</b>, an AI chatbot that helps Romanian clinics simplify <b>CAS insurance</b> processes.
-                        I worked in a collaborative team, guided by <b>international mentors</b>, and attended workshops on <b>entrepreneurship, innovation</b>, <b>public speaking</b>, and startup pitching. We delivered a working prototype, a full <b>investor pitch deck</b>, and a go-to-market strategy.                    </p>
-                    <p>
-                        Currently, I’m also part of a summer internship with <b>AROBS</b>, where I’m building a mobile app using <b>Android Studio and Kotlin</b>. The project is helping me strengthen my <b>technical consistency</b>, learn best practices in UI/UX design, and improve <b>collaboration and communication</b> through teamwork and mentorship sessions.
+                    <p className="mb-4">
+                        In the summer of 2025, I completed the <b>Community Roots</b> summer school, where I co-developed <b>CASualBot</b>, an <b>AI chatbot</b> that helps Romanian clinics simplify <b>CAS insurance</b> processes.
+                        I worked in a collaborative <b>team</b>, guided by <b>international mentors</b> and attended workshops on <b>entrepreneurship</b>, <b>innovation</b>, <b>public speaking</b> and <b>startup pitching</b>. We delivered a working <b>prototype</b>, a full <b>investor pitch deck</b> and a <b>go-to-market strategy</b>.
+                    </p>
+                    <p className="mb-4">
+                        I also completed a summer internship at <b>AROBS</b>, where I gained hands-on experience in building <b>mobile apps</b> using <b>Android Studio</b> and <b>Kotlin</b>. During this time, I developed apps featuring <b>login/logout functionality</b>, <b>weather apps</b>, <b>movie lists</b> and <b>color-themed projects</b>, in both <b>Jetpack Compose</b> and <b>XML</b>. I also collaborated with colleagues on a shared project to design and implement a <b>large language model application</b> similar to <b>ChatGPT</b>. This experience strengthened my understanding of <b>best practices</b>, <b>UI/UX design principles</b>, <b>teamwork</b> and <b>effective communication</b>.
                     </p>
                 </>
             ),
@@ -48,11 +49,14 @@ const About: React.FC = () => {
             title: "Giving Back: Volunteering & Community",
             content: (
                 <>
-                    <p>
-                        Since October 2023, I’ve been involved with Societatea Hermes, where I’m part of the HR team, helping with recruitment and people management alongside organizing events like “Cariere în IT,” hackathons and teambuilding activities. These experiences have sharpened my leadership, communication and organizational skills.
+                    <p className="mb-4">
+                        Since October 2023, I’ve been involved with <b>Societatea Hermes</b>, where I’m part of the <b>HR team</b>, helping with <b>recruitment</b> and <b>people management</b> alongside organizing events like <b>“Cariere în IT”</b>, <b>hackathons</b> and <b>teambuilding activities</b>. These experiences have sharpened my <b>leadership</b>, <b>communication</b> and <b>organizational skills</b>.
                     </p>
-                    <p>
-                        I also had the chance to volunteer at major festivals like Electric Castle and Untold in the summer of 2024, an exciting experience that strengthened my ability to adapt and communicate under pressure. I’m excited to return as a volunteer at Electric Castle again this summer in 2025.
+                    <p className="mb-4">
+                        I also had the chance to contribute as a volunteer at <b>DevTalks</b> and company events hosted by organizations such as <b>Accesa</b>, supporting <b>sessions</b>, <b>workshops</b> and <b>student engagement initiatives</b>. These experiences allowed me to connect with the <b>tech community</b>, foster <b>professional networking</b> and further develop my <b>organizational</b> and <b>teamwork skills</b>.
+                    </p>
+                    <p className="mb-4">
+                        Additionally, I was a volunteer at major festivals like <b>Electric Castle</b> and <b>Untold</b> in the summer of 2024, an exciting experience that strengthened my ability to <b>adapt</b> and <b>communicate under pressure</b>.
                     </p>
                 </>
             ),
@@ -61,11 +65,11 @@ const About: React.FC = () => {
             title: "Technical Skills",
             content: (
                 <>
-                    <p>
-                        I have solid experience with programming languages like Java, JavaFX, React, HTML, CSS, JavaScript, TypeScript, C# and Python, along with databases such as PostgreSQL, SQLite, MongoDB and SQL Server. I’m comfortable using GitHub for version control and collaboration and I enjoy creating clean, maintainable code across various projects.
+                    <p className="mb-4">
+                        I have solid experience with <b>programming languages</b> like <b>Java</b>, <b>React</b>, <b>HTML</b>, <b>Kotlin</b>, <b>CSS</b>, <b>JavaFX</b>, <b>JavaScript</b>, <b>TypeScript</b>, <b>C#</b> and <b>Python</b>, along with <b>databases</b> such as <b>PostgreSQL</b>, <b>SQLite</b>, <b>MongoDB</b> and <b>SQL Server</b>. I’m comfortable using <b>GitHub</b> for version control and collaboration and I enjoy creating <b>clean, maintainable code</b> across various projects.
                     </p>
-                    <p>
-                        Beyond these, I’m familiar with C++, Dart, Assembly, .NET, REST APIs, HTTP protocols and object-oriented programming concepts. I understand key computer science principles like data structures, algorithms, graph theory, UML diagrams networking. I regularly use tools like Visual Studio, IntelliJ IDEA, Rider, WebStorm, PyCharm, CLion and VS Code. I have foundational Linux knowledge. I’m motivated to keep learning and stay current with evolving technologies.
+                    <p className="mb-4">
+                        Beyond these, I’m familiar with  <b>Dart</b>, <b>Assembly</b>, <b>.NET</b>, <b>REST APIs</b>, <b>HTTP protocols</b> and <b>object-oriented programming </b> concepts. I understand key <b>computer science principles</b> like <b>data structures</b>, <b>algorithms</b>, <b>graph theory</b>, <b>UML diagrams</b> and <b>networking</b>. I regularly use <b>Visual Studio</b>, <b>IntelliJ IDEA</b>, <b>Rider</b>, <b>WebStorm</b>, <b>PyCharm</b>, <b>CLion</b> and <b>VS Code</b>. I have foundational <b>Linux</b> knowledge. I’m motivated to keep learning and stay current with evolving technologies.
                     </p>
                 </>
             ),
@@ -73,17 +77,17 @@ const About: React.FC = () => {
         {
             title: "Soft Skills",
             content: (
-                <p>
-                    I pride myself on bringing clear and effective communication to every team I join, fostering collaboration that helps projects thrive. My strong organizational skills and disciplined time management ensure that I consistently meet deadlines without compromising quality. Through my volunteering experiences and academic work, I’ve developed the ability to think critically and adapt quickly in high-pressure situations, enabling me to manage crises calmly and find creative solutions to unexpected challenges. Attention to detail is something I value deeply, as I believe it’s the little things that make a big difference. Above all, I strive to cultivate a positive and supportive environment that encourages teamwork, open dialogue and shared success.
+                <p className="mb-4">
+                    I pride myself on bringing <b>clear and effective communication</b> to every team I join, fostering <b>collaboration</b> that helps projects thrive. My strong <b>organizational skills</b> and disciplined <b>time management</b> ensure that I consistently meet deadlines without compromising quality. Through my <b>volunteering experiences</b> and <b>academic work</b>, I’ve developed the ability to <b>think critically</b> and <b>adapt quickly</b> in high-pressure situations, enabling me to manage crises calmly and find <b>creative solutions</b> to unexpected challenges. <b>Attention to detail</b> is something I value deeply, as I believe it’s the little things that make a big difference. Above all, I strive to cultivate a <b>positive and supportive environment</b> that encourages teamwork, <b>open dialogue</b> and shared success.
                 </p>
             ),
         },
         {
             title: "Contact Information",
             content: (
-                <p>
+                <p className="mb-4">
                     You can connect with me on <b><a href="https://github.com/ungureancatalina" target="_blank" rel="noopener noreferrer">GitHub</a></b> and <b><a href="https://www.linkedin.com/in/catalina-ungurean-22b16a280/" target="_blank" rel="noopener noreferrer">LinkedIn</a></b>. For direct inquiries, please feel free to email me at <b><a href="mailto:ungurean.catalina.iuliana@gmail.com">ungurean.catalina.iuliana@gmail.com</a></b>.
-                    <br />npm install --save-dev gh-pages
+                    <br />
 
                     (Clicking the bolded links will redirect you to my respective pages.)
                 </p>
